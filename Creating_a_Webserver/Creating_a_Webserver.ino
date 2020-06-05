@@ -15,6 +15,7 @@ void websitecontent()
 }
 void setup()
 {
+  Serial.begin(115200);
   WiFi.begin(ssid,pwd);
   while(WiFi.status()!=WL_CONNECTED)
   {
