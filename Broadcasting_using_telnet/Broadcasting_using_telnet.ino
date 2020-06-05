@@ -7,6 +7,7 @@ WiFiServer server(PORT);
 WiFiClient serverClients[MAX_CLIENT];
 void setup()
 {
+  WiFi.begin(ssid,pwd);
   Serial.begin(115200);
   uint8_t i=0;
   while(WiFi.status()!=WL_CONNECTED && i++<20)
